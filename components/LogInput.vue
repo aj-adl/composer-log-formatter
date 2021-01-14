@@ -72,7 +72,7 @@ export default {
 	computed: {
 
 		matches(){
-			const regex = /^  - Updating ([a-zA-Z0-9\-]*)\/([a-zA-Z0-9\-]*) \(([a-z0-9\.]*) => ([a-z0-9\.]*)/gm;
+			const regex = / - Updating|Upgrading ([a-zA-Z0-9\-]*)\/([a-zA-Z0-9\-]*) \(([a-z0-9\.]*) => ([a-z0-9\.]*)/gm;
 			let matches = [];
 
 			for( const match of this.input.matchAll( regex ) ) {
